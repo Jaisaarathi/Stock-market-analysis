@@ -1,12 +1,11 @@
 import eel
 import yfinance as yf
 import pandas as pd
-from sklearn.model_selection import train_test_split
 import matplotlib.pyplot as plt
 import numpy as np
 
 # Set up the Eel app
-eel.init('Stock_market_analysis')
+eel.init('main')
 
 @eel.expose
 def predict_stock(ticker,start,end):
