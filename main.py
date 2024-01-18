@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 # Set up the Eel app
-eel.init('eel')
+eel.init('Stock_market_analysis')
 
 @eel.expose
 def predict_stock(ticker,start,end):
@@ -88,4 +88,4 @@ def predict_stock(ticker,start,end):
         return f'Error: {str(e)}'
 
 # Start the Eel app
-eel.start('gui\index.html', size=(800, 600))
+eel.start('template\index.html', size=(800, 600))
