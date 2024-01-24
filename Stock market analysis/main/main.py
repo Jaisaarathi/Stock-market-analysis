@@ -33,7 +33,7 @@ def predict_stock(ticker,start,end):
             x.append(data_train_scale[i-100:i])
             y.append(data_train_scale[i,0])
         x,y=np.array(x),np.array(y)
-        
+        print(x)        
         
         from keras.layers import Dense , Dropout, LSTM
         from keras.models import Sequential
